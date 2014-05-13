@@ -1,0 +1,79 @@
+$SETTINGS_PADDING:   3%;
+
+/* Settings pane. */
+.settings {
+	-webkit-animation: fade-in .3s 1s 1 normal backwards;
+	font: 300 14px 'Roboto', sans-serif;
+	left: $SETTINGS_PADDING;
+	opacity: 1;
+	position: absolute;
+	right: $SETTINGS_PADDING;
+	top: 1em;
+	-webkit-user-select: none;
+	/* Ensures settings are clickable about target area. */
+	z-index: 2;
+}
+
+.settings label {
+	background-color: #fff;
+	border-radius: 3px;
+	border: 1px solid $EDGE_GREY;
+	box-shadow: 0 2px 3px #e7e7e7;
+	box-sizing: border-box;
+	display: inline-block;
+	margin-bottom: .5em;
+	margin-right: $SETTINGS_PADDING;
+	max-width: 200px;
+	overflow-x: hidden;
+	padding-right: .5em;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: (100% - $SETTINGS_PADDING) / 2;
+}
+
+.settings label:last-of-type {
+	margin-right: 0;
+}
+
+.settings input[type="checkbox"] {
+	-webkit-appearance: none;
+	background-color: $DARK_RED;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 0;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 0;
+	border-color: transparent;
+	border-width: 0;
+	box-shadow: inset 0 0 .5em $LIGHT_RED;
+	box-sizing: border-box;
+	display: inline-block;
+	height: 2em;
+	margin-right: .3em;
+	vertical-align: -.65em;
+	width: 2em;
+}
+
+.settings input[type="checkbox"]:checked {
+	background-color: $DARK_GREEN;
+	box-shadow: inset 0 0 .5em $LIGHT_GREEN;
+}
+
+
+@-webkit-keyframes fade-in {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-1em);
+	}
+}
+
+/* At larger sizes, stack settings icons. */
+@media all and (min-width: 500px) {
+	.settings {
+		left: 1em;
+		right: 1em;
+	}
+
+	.settings label {
+		margin-right: 1em;
+	}
+}

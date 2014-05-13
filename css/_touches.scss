@@ -1,0 +1,52 @@
+$TOUCH_SIZE:     150px;
+
+/* Touch testing elements */
+.touch-marker {
+	background-color: $BG_GREY;
+	border: 4px solid $MEDIUM_BLUE;
+	border-radius: $TOUCH_SIZE;
+	box-shadow: 0 0 5px $EDGE_GREY;
+	opacity: 0;
+	position: absolute;
+	height: $TOUCH_SIZE / 2;
+	transition:
+		.3s background-color ease-in-out,
+		.3s opacity ease-in-out,
+		.3s box-shadow ease-in-out;
+	width: $TOUCH_SIZE / 2;
+	z-index: 1;
+}
+
+/* Remove fancy CSS when simple-shapes flag added. */
+.targets--simple-shapes .touch-marker {
+	border-radius: 0;
+	box-shadow: none;
+	transition: none;
+}
+
+.touch-marker--inactive {}
+
+.touch-marker--fade {
+	-webkit-animation: fade-out 1s 0 1 normal forwards;
+}
+
+.touch-marker--active {
+	box-shadow: 0 0 20px #999;
+	/* background-color: $EDGE_GREY; */
+	opacity: 1;
+}
+
+.targets--simple-shapes .touch-marker--active {
+	box-shadow: none;
+}
+
+/* Color each indicator differently. */
+.targets > div:nth-of-type(1n) { border-color: $MEDIUM_BLUE; background-color: $LIGHT_BLUE; }
+.targets > div:nth-of-type(2n) { border-color: $MEDIUM_RED; background-color: $LIGHT_RED; }
+.targets > div:nth-of-type(3n) { border-color: $MEDIUM_YELLOW; background-color: $LIGHT_YELLOW; }
+.targets > div:nth-of-type(4n) { border-color: $MEDIUM_GREEN; background-color: $LIGHT_GREEN; }
+
+@-webkit-keyframes fade-out {
+	0% 		{opacity: .8;}
+	100%	{opacity: 0;}
+}

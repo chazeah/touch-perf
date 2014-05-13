@@ -1,0 +1,487 @@
+/* Nothing to see here. */
+/* HTML5 Boilerplate resets. */
+/* line 2, _resets.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 3, _resets.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 4, _resets.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 5, _resets.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 6, _resets.scss */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 7, _resets.scss */
+html, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222;
+}
+
+/* line 8, _resets.scss */
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* line 9, _resets.scss */
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 10, _resets.scss */
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 11, _resets.scss */
+a {
+  color: #15c;
+  text-decoration: none;
+}
+
+/* line 12, _resets.scss */
+a:visited {
+  color: #61c;
+}
+
+/* line 13, _resets.scss */
+a:hover {
+  color: #15c;
+  text-decoration: underline;
+}
+
+/* line 14, _resets.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 15, _resets.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 16, _resets.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 17, _resets.scss */
+b, strong {
+  font-weight: 700;
+}
+
+/* line 18, _resets.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 19, _resets.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 20, _resets.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 21, _resets.scss */
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 22, _resets.scss */
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 23, _resets.scss */
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/* line 24, _resets.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 25, _resets.scss */
+q {
+  quotes: none;
+}
+
+/* line 26, _resets.scss */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 27, _resets.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 28, _resets.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 29, _resets.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 30, _resets.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 31, _resets.scss */
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+/* line 32, _resets.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 33, _resets.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/* line 34, _resets.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 35, _resets.scss */
+figure {
+  margin: 0;
+}
+
+/* line 36, _resets.scss */
+form {
+  margin: 0;
+}
+
+/* line 37, _resets.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 38, _resets.scss */
+label {
+  cursor: pointer;
+}
+
+/* line 39, _resets.scss */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+  white-space: normal;
+}
+
+/* line 40, _resets.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 41, _resets.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 42, _resets.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+
+/* line 43, _resets.scss */
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+/* line 44, _resets.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *width: 13px;
+  *height: 13px;
+}
+
+/* line 45, _resets.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 46, _resets.scss */
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* line 47, _resets.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 48, _resets.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/* line 50, _resets.scss */
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* line 51, _resets.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 52, _resets.scss */
+td {
+  vertical-align: top;
+}
+
+/* line 53, _resets.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: black;
+  padding: 0.2em 0;
+}
+
+/* line 54, _resets.scss */
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+/* Variables and defaults. */
+/* Colors. */
+/* Settings pane. */
+/* line 4, _settings.scss */
+.settings {
+  -webkit-animation: fade-in .3s 1s 1 normal backwards;
+  font: 300 14px 'Roboto', sans-serif;
+  left: 3%;
+  opacity: 1;
+  position: absolute;
+  right: 3%;
+  top: 1em;
+  -webkit-user-select: none;
+  /* Ensures settings are clickable about target area. */
+  z-index: 2;
+}
+
+/* line 17, _settings.scss */
+.settings label {
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 2px 3px #e7e7e7;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: .5em;
+  margin-right: 3%;
+  max-width: 200px;
+  overflow-x: hidden;
+  padding-right: .5em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 48.5%;
+}
+
+/* line 34, _settings.scss */
+.settings label:last-of-type {
+  margin-right: 0;
+}
+
+/* line 38, _settings.scss */
+.settings input[type="checkbox"] {
+  -webkit-appearance: none;
+  background-color: #db4437;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 0;
+  border-color: transparent;
+  border-width: 0;
+  box-shadow: inset 0 0 0.5em #ed9d97;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 2em;
+  margin-right: .3em;
+  vertical-align: -0.65em;
+  width: 2em;
+}
+
+/* line 56, _settings.scss */
+.settings input[type="checkbox"]:checked {
+  background-color: #0f9d58;
+  box-shadow: inset 0 0 0.5em #7bcfa9;
+}
+
+@-webkit-keyframes fade-in {
+  /* line 63, _settings.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-1em);
+  }
+}
+
+/* At larger sizes, stack settings icons. */
+@media all and (min-width: 500px) {
+  /* line 71, _settings.scss */
+  .settings {
+    left: 1em;
+    right: 1em;
+  }
+
+  /* line 76, _settings.scss */
+  .settings label {
+    margin-right: 1em;
+  }
+}
+/* Touch testing elements */
+/* line 4, _touches.scss */
+.touch-marker {
+  background-color: #f5f5f5;
+  border: 4px solid #76a7fa;
+  border-radius: 150px;
+  box-shadow: 0 0 5px #e5e5e5;
+  opacity: 0;
+  position: absolute;
+  height: 75px;
+  transition: .3s background-color ease-in-out, 		.3s opacity ease-in-out, 		.3s box-shadow ease-in-out;
+  width: 75px;
+  z-index: 1;
+}
+
+/* Remove fancy CSS when simple-shapes flag added. */
+/* line 21, _touches.scss */
+.targets--simple-shapes .touch-marker {
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+}
+
+/* line 29, _touches.scss */
+.touch-marker--fade {
+  -webkit-animation: fade-out 1s 0 1 normal forwards;
+}
+
+/* line 33, _touches.scss */
+.touch-marker--active {
+  box-shadow: 0 0 20px #999;
+  /* background-color: $EDGE_GREY; */
+  opacity: 1;
+}
+
+/* line 39, _touches.scss */
+.targets--simple-shapes .touch-marker--active {
+  box-shadow: none;
+}
+
+/* Color each indicator differently. */
+/* line 44, _touches.scss */
+.targets > div:nth-of-type(1n) {
+  border-color: #76a7fa;
+  background-color: #a0c3ff;
+}
+
+/* line 45, _touches.scss */
+.targets > div:nth-of-type(2n) {
+  border-color: #e57368;
+  background-color: #ed9d97;
+}
+
+/* line 46, _touches.scss */
+.targets > div:nth-of-type(3n) {
+  border-color: #fbcb43;
+  background-color: #ffe168;
+}
+
+/* line 47, _touches.scss */
+.targets > div:nth-of-type(4n) {
+  border-color: #33b679;
+  background-color: #7bcfa9;
+}
+
+@-webkit-keyframes fade-out {
+  /* line 50, _touches.scss */
+  0% {
+    opacity: .8;
+  }
+
+  /* line 51, _touches.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Make doc full size. */
+/* line 8, main.scss */
+html, body, .targets {
+  height: 100%;
+}

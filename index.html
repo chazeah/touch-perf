@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Touch demo</title>
+		<link href="//fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
+	<body>
+		<section class="settings"><!--
+		 --><label for="useTranslateZ">
+				<input type="checkbox" id="useTranslateZ" checked="checked">
+				Use translateZ
+			</label><!--
+		 --><label for="useRAF">
+				<input type="checkbox" id="useRAF" checked="checked">
+				Use RAF
+			</label><!--
+		 --><label for="useSimpleShapes">
+				<input type="checkbox" id="useSimpleShapes">
+				Simple shapes
+			</label><!--
+	 --></section>
+
+		<section class="targets"></section>
+
+		<!-- Scripts. -->
+		<script src="/js/underscore.1.4.4.min.js"></script>
+		<script src="/js/settings.js"></script>
+		<script src="/js/touches.js"></script>
+		<script src="/js/demo.js"></script>
+	</body>
+</html>
