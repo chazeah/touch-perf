@@ -51,6 +51,10 @@ $SETTINGS_PADDING:   3%;
 	margin-right: .3em;
 	vertical-align: -.65em;
 	width: 2em;
+
+	&:focus {
+		outline: none;
+	}
 }
 
 .settings input[type="checkbox"]:checked {

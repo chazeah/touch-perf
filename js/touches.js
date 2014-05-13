@@ -91,7 +91,7 @@ function setTargetLocation(el, x, y) {
 	};
 	
 	if (settings.useRAF) {
-		window.webkitRequestAnimationFrame(moveTarget);
+		window.requestAnimationFrame(moveTarget);
 	} else {
 		moveTarget();
 	}
